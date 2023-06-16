@@ -18,7 +18,7 @@ This repository aims to provide a **simple and accessible example** for develope
 Contributions to FlaskBankMarketingClassifier are welcome! Feel free to submit **pull requests** with improvements, bug fixes, or additional features to enhance the application and learning experience.
 
 ## License
-This project is licensed under the **[MIT License](LICENCE)**.
+This project is licensed under the [MIT License](LICENSE).
 
 Explore FlaskBankMarketingClassifier and learn how to build and deploy your own end-to-end ML projects with Flask and cloud platforms.
 
