@@ -1,3 +1,10 @@
+> NOTE:
+> 
+>  🚧 This repository is currently under construction.🚧
+> 
+> Stay tuned for updates as we build and refine the FlaskBankMarketingClassifier project.
+
+
 # FlaskBankMarketingClassifier
 *Building an End-to-End ML Project with Flask and Cloud*
 
