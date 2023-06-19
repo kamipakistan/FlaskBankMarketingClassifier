@@ -1,3 +1,5 @@
+# Bank Marketing Dataset - Random 20 Rows
+
 | age |        job       |  marital  |  education | default | balance | housing |  loan | contact |  day | month | campaign | pdays | previous | poutcome | deposit |
 |-----|-----------------|-----------|------------|---------|---------|---------|-------|---------|------|-------|----------|-------|----------|----------|---------|
 |  58 |   management    |  married  |  tertiary  |   no    |  2143   |   yes   |   no  | unknown |   5  |  may  |    1     |  -1   |    0     | unknown  |   yes   |
