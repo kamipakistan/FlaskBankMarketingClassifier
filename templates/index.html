@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Term Deposit Subscription Classifier</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container p-5 my-5 bg-dark text-white">
+
+  <div>
+  <h1>Term Deposit Subscription Classifier</h1>
+  <p>The purpose of this simple project is to predict whether a client will subscribe to a term <b>deposit</b> by analyzing data from direct marketing campaigns, specifically phone calls, conducted by a Portuguese banking institution.</p>
+  <p>If you're unsure about the data to input, you can use a small sample table for testing the classification model. Here is the <a href="https://github.com/kamipakistan/FlaskBankMarketingClassifier/blob/main/testing_data/testing_data.md" target="_blank">link.</a></p>
+
+    <br>
+  </div>
+    <form action="/submit" method="post">
+      <div class="form-group">
+        <label for="age">Age</label>
+        <input type="text" class="form-control" id="age" name="age" value="59">
+      </div>
+
+      <div class="form-group">
+        <label for="job">Job</label>
+        <input type="text" class="form-control" id="job" name="job" value="admin.">
+      </div>
+
+      <div class="form-group">
+        <label for="marital">Marital</label>
+        <input type="text" class="form-control" id="marital" name="marital" value="married">
+      </div>
+
+      <div class="form-group">
+        <label for="education">Education</label>
+        <input type="text" class="form-control" id="education" name="education" value="secondary">
+      </div>
+
+      <div class="form-group">
+        <label for="default">Default</label>
+        <input type="text" class="form-control" id="default" name="default" value="no">
+      </div>
+
+      <div class="form-group">
+        <label for="balance">Balance</label>
+        <input type="text" class="form-control" id="balance" name="balance" value="2343">
+      </div>
+
+      <div class="form-group">
+        <label for="housing">Housing</label>
+        <input type="text" class="form-control" id="housing" name="housing" value="yes">
+      </div>
+
+      <div class="form-group">
+        <label for="loan">Loan</label>
+        <input type="text" class="form-control" id="loan" name="loan" value="no">
+      </div>
+
+      <div class="form-group">
+        <label for="contact">Contact</label>
+        <input type="text" class="form-control" id="contact" name="contact" value="unknown">
+      </div>
+
+      <div class="form-group">
+        <label for="day">Day</label>
+        <input type="text" class="form-control" id="day" name="day" value="5">
+      </div>
+
+      <div class="form-group">
+        <label for="month">Month</label>
+        <input type="text" class="form-control" id="month" name="month" value="may">
+      </div>
+
+      <div class="form-group">
+        <label for="campaign">Campaign</label>
+        <input type="text" class="form-control" id="campaign" name="campaign" value="1">
+      </div>
+
+      <div class="form-group">
+        <label for="pdays">Pdays</label>
+        <input type="text" class="form-control" id="pdays" name="pdays" value="-1">
+      </div>
+
+      <div class="form-group">
+        <label for="previous">Previous</label>
+        <input type="text" class="form-control" id="previous" name="previous" value="0">
+      </div>
+
+      <div class="form-group">
+        <label for="poutcome">Poutcome</label>
+        <input type="text" class="form-control" id="poutcome" name="poutcome" value="unknown">
+      </div>
+
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="reset" class="btn btn-primary">Reset</button>
+      </div>
+      <br>
+      <div class="form-group">
+        {%if result %}
+        {% if result == 'yes'%}
+        <h1>Prediction: Client likely to subscribe to a term deposit.</h1>
+        {% else %}
+        <h1>Prediction: Client unlikely to subscribe to a term deposit.</h1>
+        {% endif %}
+        {% endif %}
+
+      </div>
+    </form>
+
+  </div>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
